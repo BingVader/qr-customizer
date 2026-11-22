@@ -1,0 +1,49 @@
+{
+  "name": "qr-customizer",
+  "version": "1.0.0",
+  "description": "Zero-backend, production-ready customizable QR code generator with center PNG logo support, color themes, contrast protection, and URL shortening.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "demo": "node examples/generate-sample.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "qr",
+    "qrcode",
+    "svg",
+    "canvas",
+    "logo",
+    "themes",
+    "customizer",
+    "shortener"
+  ],
+  "author": "BingVader",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode-generator": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
