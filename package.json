@@ -35,7 +35,18 @@
     "customizer",
     "shortener"
   ],
-  "author": "BingVader",
+  "author": {
+    "name": "BingVader",
+    "url": "https://github.com/BingVader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BingVader/qr-customizer.git"
+  },
+  "homepage": "https://github.com/BingVader/qr-customizer#readme",
+  "bugs": {
+    "url": "https://github.com/BingVader/qr-customizer/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "qrcode-generator": "^2.0.4"
